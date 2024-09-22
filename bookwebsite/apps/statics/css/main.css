@@ -1,0 +1,50 @@
+/* Global layout settings */
+.body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full page height    */
+    background-color: rgb(215, 208, 208);
+    color: rgb(188, 122, 133);
+}
+
+/* Header styling */
+.header {
+    background-color: rgb(163, 141, 141);
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Wrapper to control layout of sidebar and main content */
+.wrapper {
+    display: flex;
+    flex: 1; /* Takes the available space between header and footer */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    background-color: rgb(183, 174, 174);
+    color: white; 
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    margin-right: 0px; /* Adds space between sidebar and content between component*/
+}
+
+/* Main content styling */
+.content {
+    flex: 1; /* Main content grows to fill remaining space */
+    background-color: white;
+}
+
+/* Footer styling */
+.footer {
+    background-color:rgb(163, 141, 141);/* Ensures the footer background is darkgray */
+    color: antiquewhite; /* Text color in the footer */
+    padding: 15px;
+    text-align: center;
+    /* Make sure the background-color and color are applied */
+}
+
+

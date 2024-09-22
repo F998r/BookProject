@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href= "{% static 'css/main.css' %}" rel="stylesheet">
+    <title>
+        Ebook - {% block title %} {% endblock %}
+    </title>
+</head>
+
+<body class="body">
+    <header class="header">
+        {% include 'includes/header.html' %}
+    </header>
+
+    <div class="wrapper">
+        <sidebar class="sidebar">
+            {% include 'includes/sidebar.html' %}
+        </sidebar>
+
+        <main class="content">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+
+    <footer class="footer">
+        {% include 'includes/footer.html' %}
+    </footer>
+</body>
+
+</html>
